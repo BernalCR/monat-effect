@@ -1,0 +1,676 @@
+body {
+    background: #fff !important;
+}
+.clasic_btn_MONAT{
+    background-color: #885EB5;
+    font-family: 'SuisseIntl-Medium' !important;
+}
+.lbxp > div:first-child {
+    background-color: #a683c4 !important;
+}
+#smooth-wrapper{
+    overflow-x: hidden;
+    width: calc(100% - 50px) !important;
+    margin: auto;
+}
+/* ------------- extra slide styles ------------- */
+.swiper-scrollbar-drag {
+    background: #885eb5 !important;
+}
+.swiper-scrollbar {
+    background: #deceee !important;
+    width: 90% !important;
+    left: 50% !important;
+    transform: translate(-50%);
+}
+/* ------------- extra slide styles ------------- */
+/* ------------- /Span styles ------------- */
+.oval_marker, .underline_marker, .Offcanvas_container, .Offcanvas_container > a{
+    position: relative;
+}
+.oval_marker:before{
+    content: url("https://monatglobal.com/ca/wp-content/uploads/sites/5/2023/04/scribble.svg");
+    width:130%;
+    position:absolute;
+    z-index:-1;
+    left: 50%;
+    top: 15%;
+    transform: translatex(-50%);
+}
+.gradientSec:last-child .oval_marker:before{
+    width:110%;
+}
+.underline_marker:before{
+    content: url("https://monatglobal.com/wp-content/uploads/2023/05/highlight-long_-1.svg");
+    width:100%;
+    position:absolute;
+    z-index:-1;
+    bottom: 0;
+    left: 0;
+}
+/* ------------- Span styles/ ------------- */
+/* ------------- /Header ------------- */
+#mEffect_logo{
+    position: absolute;
+    width: clamp(10em, 18vw, 16em);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+#mEffect_header{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    max-height: 80px;
+    background-color: #fff;
+    border-bottom: 1px solid #dfdfe1;
+    position: fixed;
+    z-index: 1;
+    padding: 0 20px;
+    overflow: hidden;
+    transition: all .25s ease-in-out;
+}
+#mEffect_header.disable{
+    max-height: 0;
+}
+#header_mEffect_btn{
+    background: #fff;
+    font-family: 'SuisseIntl-Medium' !important;
+    color: #685082 !important;
+    border-radius: 0px;
+    border: 2px solid #ececec;
+    font-size: 0.8em !important;
+    letter-spacing: 0.14em;
+    padding:0.85em 2em;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+/* ------------- Header/ ------------- */
+/* ------------- /Intro Section ------------- */
+#introSec{
+    padding-top: calc(50vh + 80px);
+    background-image: url("https://monatglobal.com/wp-content/uploads/2023/04/radiant-graphic.svg"), linear-gradient(341.71deg, rgba(199, 175, 226, 0.56) 40.04%, rgba(209, 152, 113, 0) 99.98%);
+    background-size: 300%, 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 0 0 15px 15px;
+    overflow: hidden;
+}
+#introSec > div:first-child{
+    transform: translateY(-50%);
+}
+#introSec h1{
+    letter-spacing: 0.12em;
+    display: block;
+    margin: auto;
+    opacity: 0;
+    font-family: 'Suisseintl-light', Fallback, sans-serif;
+    font-size: clamp(1.3em, 1.4vw, 1.5em);
+    text-align: center;
+    margin-bottom: -80px;
+    height: 0;
+}
+#introSec .monat_logo{
+    width: clamp(8em, 17vw, 11em) !important;
+    margin: 10px 0 20px !important;
+}
+#introSec > div:first-child h2{
+    font-size: clamp(3em, 5vw, 4em);
+    z-index: 1;
+}
+/*.Offcanvas_container.canvas_desk{
+   */
+   /* margin-top: 15vh;
+   */
+   /*
+}
+*/
+.Offcanvas_container > a{
+    padding-bottom: 8rem;
+}
+.Offcanvas_container.canvas_desk img{
+    width: min(100%, 500px);
+    margin: auto;
+    display: block;
+}
+.Offcanvas_container p{
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    width: min(100%, 450px);
+    padding: 0 20px;
+    font-size: clamp(1.3em, 2.5vw, 2.6em);
+}
+.Offcanvas_container.canvas_desk #Offcanvas_left:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, #9960c7 27%, rgba(255,255,255,0) 67%);
+}
+.Offcanvas_container.canvas_desk #Offcanvas_right:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, #e59563 27%, rgba(255,255,255,0) 67%);
+}
+#toVideos_btn:focus, #toVideos_btn:active, #toVideos_btn:hover{
+    background-color: #2e2a4a;
+    border: 2px solid #2e2a4a;
+}
+/*Scroll down animation*/
+.container_ {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   /*transform: translateY(-50%);
+   */
+    margin-top: 30px;
+}
+.scroll-bar_ {
+    width: 30px;
+    height: 60px;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    position: relative;
+}
+.scroll-bar_::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 12px;
+    height: 12px;
+    background-color: #fff;
+    border-radius: 8px;
+    animation: fadeDown1 1500ms infinite;
+}
+@keyframes fadeDown1 {
+    0% {
+        opacity: 1;
+        transform: translate(-50%, 0);
+   }
+    100% {
+        opacity: 0;
+        transform: translate(-50%, 25px);
+   }
+}
+/* ------------- Intro Section/ ------------- */
+/* ------------- /Gradient Sections ------------- */
+.gradientSec{
+    height: 80vh;
+    min-height: 580px;
+    overflow: hidden;
+    background-size: 400% 100%;
+    background-image: linear-gradient(341.71deg, rgb(238 224 255 / 56%) 40.04%, rgb(213 161 125 / 0%) 99.98%);
+    animation: moverGradiente 15s ease infinite;
+    position: relative;
+    z-index: 1;
+    transform: scale(0.85);
+    border-radius: 20px;
+   /*padding: 8vh 0;
+   */
+}
+.gradientSec a, .gradientSec p, #videosSec{
+    position: relative;
+    z-index: 1;
+}
+.gradientSec p{
+    font-size: clamp(2.5em, 5vw, 3.5em);
+}
+.gradientSec img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+}
+/* ------------- Gradient Sections/ ------------- */
+.hash_module{
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+}
+.hash_module p:first-child{
+    font-size: 1.3em;
+    margin-bottom: 0;
+}
+.hash_module p:last-child{
+    font-size: clamp(2em, 3.3vw, 3.3em);
+}
+/* ---------- /litebox ecomm ---------- */
+/*Overlay*/
+.lbxp > div:first-child {
+    background-color: rgb(45 42 74 / 90%) !important;
+    opacity: 0.8 !important;
+}
+/*Gallery container*/
+.lbxp > div:nth-child(2){
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+/*Pagination*/
+.lbxp > div:nth-child(3) li{
+    width: 12px !important;
+}
+.lbxp > div:nth-child(3){
+    inset: auto auto 16% 50% !important;
+}
+.lbxp > div:nth-child(3) svg{
+    transition: all 200ms;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.lbxp > div:nth-child(3) svg circle{
+    visibility: hidden;
+}
+.lbxp > div:nth-child(3) svg.pagerActive{
+    padding: 3px !important;
+    border: 1px solid #fff;
+    background-color: transparent;
+}
+/*Video and images*/
+.lbxp iframe{
+    height: 50vh !important;
+    width: 60vw !important;
+}
+/* ---------- litebox ecomm/ ---------- */
+/* ---------- /Quotes slider ---------- */
+#quotes_slide {
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+}
+.quotes{
+    position:relative;
+}
+.quotes:before{
+    content: url(https://monatglobal.com/ca/wp-content/uploads/sites/5/2023/04/left-quotes.svg);
+    width: 200%;
+    height: 1em;
+   /* background-color: red;
+    */
+    position: absolute;
+    z-index: -1;
+    left: -0.7em;
+    top: -0.2em;
+    padding: 0 0.25em;
+}
+.quotes_left{
+    position:relative;
+}
+.quotes_left:before{
+    content: url(https://monatglobal.com/ca/wp-content/uploads/sites/5/2023/04/right-quotes.svg);
+    width: 200%;
+    height: 1em;
+   /* background-color: red;
+    */
+    position: absolute;
+    z-index: -1;
+    left: 0.1em;
+    top: -0.1em;
+    padding: 0 0.25em;
+}
+#quotes_slide .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    padding: 8em 0;
+}
+#quotes_slide .swiper-slide p{
+    line-height: 1.1em;
+    letter-spacing: 0.02em !important;
+    font-family: 'SurveyorDisplay-Book-Pro' !important;
+    color: #2f294b;
+    font-size: clamp(2em, 2.5vw, 2.6em);
+    width: min(40%, 650px);
+}
+#quotes_slide .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#quotes_slide .swiper-pagination{
+    bottom: 20% !important;
+}
+#quotes_slide .swiper-pagination span{
+    opacity: 1;
+    content: "";
+    border-radius: 2px;
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background-color: #122947;
+    vertical-align: middle;
+    transition: all 200ms Cubic-bezier(0.3, 0, 0.3, 1);
+}
+#quotes_slide .swiper-pagination span.swiper-pagination-bullet-active {
+    border: 1px solid #122947;
+    background-color: transparent;
+    width: 8px;
+    height: 8px;
+    border-radius: 4px;
+}
+#quotes_slide .swiper-pagination span:not(:last-child){
+    margin-right: 7px !important;
+}
+/* ---------- Quotes slider/ ---------- */
+/* ---------- /Videos section ---------- */
+#videosSec{
+    background: linear-gradient(179deg, rgba(2,0,36,0) 0%, rgb(220 207 238 / 74%) 35%, rgba(0,212,255,0) 100%);
+}
+#video_row > div{
+    transform: translateX(calc(100% + 30px));
+}
+#video_row > div:not(:first-child){
+    position: absolute;
+}
+#swiper_cards{
+    overflow-x: hidden;
+    position: relative;
+    padding-bottom: 30px;
+}
+#swiper_cards + div{
+    margin: 120px 20px 80px;
+}
+.video_card, #swiper_cards .swiper-slide{
+    background-color: #9EEDF2;
+    width: clamp(230px, 22vw, 330px);
+    height: clamp(360px, 35vw, 530px);
+    padding: 0 25px 25px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    display: flex;
+    align-items: flex-end;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.video_card p, #swiper_cards .swiper-slide p{
+    line-height: 1.1em;
+    letter-spacing: 0.02em !important;
+    font-family: 'SurveyorDisplay-Book-Pro' !important;
+    color: #fff;
+    font-size: clamp(2.8rem, 2.4vw, 3.1rem);
+    position: relative;
+    z-index: 1;
+    margin-bottom: 0;
+}
+.video_card svg, #swiper_cards .swiper-slide svg{
+    height: 6.3rem;
+    transition: all 0.2s ease-in-out;
+    position: relative;
+    z-index: 1;
+}
+.video_card svg:hover {
+    transform: scale(1.1);
+}
+.video_card:nth-child(1), #swiper_cards .swiper-slide:nth-child(1) {
+    background-image: url('https://monatglobal.com/ca/wp-content/uploads/sites/5/2023/04/victoria-salas-min.jpg');
+}
+.video_card:nth-child(2), #swiper_cards .swiper-slide:nth-child(2) {
+    background-image: url('https://monatglobal.com/wp-content/uploads/2023/05/Esli-Tamayo_monateffect.jpg');
+}
+.video_card:nth-child(3), #swiper_cards .swiper-slide:nth-child(3) {
+    background-image: url('https://monatglobal.com/ca/wp-content/uploads/sites/5/2023/04/Christina-Smallwood_1.jpg');
+}
+/*.video_card:nth-child(4), #swiper_cards .swiper-slide:nth-child(4) {
+   */
+   /* background-image: url('https://monatglobal.com/ca/wp-content/uploads/sites/5/2023/04/Katherine-Skupien.jpg');
+   */
+   /*
+}
+*/
+.video_card:nth-child(4), #swiper_cards .swiper-slide:nth-child(4) {
+    background-image: url('https://monatglobal.com/ca/wp-content/uploads/sites/5/2023/04/Cristina-Gavian.jpg');
+}
+.video_card:nth-child(5), #swiper_cards .swiper-slide:nth-child(5) {
+    background-image: url('https://monatglobal.com/wp-content/uploads/2023/05/ANTONIA-DUGGAN.jpg');
+}
+.video_card:nth-child(6), #swiper_cards .swiper-slide:nth-child(6) {
+    background-image: url('https://monatglobal.com/wp-content/uploads/2023/05/Lourdes-Del-Valle-monateffect.jpg');
+}
+.video_card:nth-child(7), #swiper_cards .swiper-slide:nth-child(7) {
+    background-image: url('https://monatglobal.com/wp-content/uploads/2023/05/Eileen-Stauffer_monateffect.jpg');
+}
+.video_card:nth-child(8), #swiper_cards .swiper-slide:nth-child(8) {
+    background-image: url('https://monatglobal.com/wp-content/uploads/2023/06/Lindsey-Willey_monateffect.jpg');
+}
+.video_row div:hover {
+    transform: scale(1.1);
+}
+.video_card.purple:before, #swiper_cards .swiper-slide.purple:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(144,101,193,1) 15%, rgba(255,255,255,0) 40%);
+}
+.video_card.coral:before, #swiper_cards .swiper-slide.coral:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, #e59563 15%, rgba(255,255,255,0) 40%);
+}
+/* ---------- Videos section/ ---------- */
+/* ---------- /Scroll gallery ---------- */
+#scroll_gallery > div{
+    margin-bottom: 1vw;
+}
+#scroll_gallery img, #scroll_gallery p{
+    transform: translateY(100%);
+}
+#scroll_gallery p{
+    background-image: linear-gradient(341.71deg, rgb(199 175 226 / 16%) 40.04%, rgb(209 152 113 / 12%) 99.98%);
+    animation: moverGradiente 15s ease infinite;
+    padding: 7vw 4vw;
+    font-size: clamp(2em, 2.5vw, 3em);
+    text-align: center;
+    margin-bottom: 0;
+}
+#scroll_gallery >div>div{
+    display: flex;
+    align-items: center;
+    width: 32%;
+   /*transform: translateY(100%);
+   */
+}
+#scroll_gallery img, #scroll_gallery p{
+    display: block;
+    border-radius: 15px;
+    width: 100%;
+    opacity: 0;
+}
+/* ---------- Scroll gallery/ ---------- */
+/* ---------- /Footer ---------- */
+.sbi-owl-dots .sbi-owl-dot span{
+    opacity: 1;
+    content: "";
+    border-radius: 8px;
+    display: inline-block;
+    width: 5px !important;
+    height: 5px !important;
+    background-color: #122947;
+    vertical-align: middle;
+    transition: all 200ms Cubic-bezier(0.3, 0, 0.3, 1);
+}
+.sbi-owl-dots .sbi-owl-dot.active span{
+    border: 1px solid #122947;
+    background-color: transparent;
+    width: 8px !important;
+    height: 8px !important;
+    border-radius: 4px;
+}
+#sb_instagram .sbi_link_area {
+    z-index: 1000 !important;
+}
+#sbi_lightbox .sbi-owl-dots {
+    position: absolute;
+    top: auto;
+    bottom: 15px;
+    transform: translateX(-50%);
+}
+.sbi-owl-dots .sbi-owl-dot span {
+    display: block;
+    width: 0.5em !important;
+    height: 0.5em !important;
+    margin: 3px 4px;
+}
+.sbi_lightboxOverlay {
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(2px);
+}
+.sbi_lb-outerContainer, .sbi_lb-image{
+    height: max-content !important;
+}
+.sbi_lb-image{
+    width: 100% !important;
+    object-fit: contain;
+}
+.sbi_lightbox{
+    height: 100vh;
+    margin-top: -50px;
+    display: flex;
+    align-items: center;
+}
+/* ---------- Footer/ ---------- */
+/* ---------- social_row/ ---------- */
+#social_row {
+    width: fit-content;
+    margin: 40px auto;
+}
+#social_row .social_icons {
+    width: 2em;
+}
+#social_row > a:not(:last-child) {
+    margin-right: 1.5em;
+}
+/* ---------- social_row/ ---------- */
+@keyframes moverGradiente {
+    0% {
+        background-position: 0% 50%, 100% ;
+   }
+    50% {
+        background-position: 100% 50%, 100%;
+   }
+    100% {
+        background-position: 0% 50%, 100%;
+   }
+}
+@media only screen and (max-width: 700px){
+    #smooth-wrapper{
+        width: calc(100% - 30px) !important;
+   }
+   /* ------ /introSec ------- */
+    #introSec{
+        padding-top: calc(45vh + 80px);
+        background-size: 420%, 100%;
+        background-position: center -50%;
+   }
+    #introSec h1{
+        margin-bottom: 50px;
+        margin-top: -30px;
+   }
+    #introSec .monat_logo{
+        margin: 5px 0 13px !important;
+   }
+    .Offcanvas_container{
+        transform: translateY(20%);
+        opacity: 0;
+   }
+    .Offcanvas_container > div{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding-bottom: 35px;
+   }
+    .Offcanvas_container p{
+        padding: 0 10px;
+   }
+   /* ------ introSec/ ------- */
+   /* ------ /gradientSec ------- */
+    .gradientSec{
+        height: 50vh;
+        min-height: auto;
+        padding: 0 15px;
+   }
+    .gradientSec.last{
+        height: 65vh;
+   }
+    .gradientSec.last a{
+        padding: 0.4em 1.5em;
+        margin-top: 10px !important;
+   }
+   /* ------ gradientSec/ ------- */
+    .swiper-slide p{
+        width: 90%;
+   }
+    .video_card{
+        padding: 0 20px 20px;
+   }
+    #scroll_gallery{
+        margin: 60px 0 80px 0;
+   }
+    #scroll_gallery > div > div{
+        width: 48%;
+   }
+    #scroll_gallery > div{
+        align-items: stretch;
+        margin-bottom: 15px;
+   }
+    #scroll_gallery img, #scroll_gallery p{
+        height: 100%;
+   }
+    #scroll_gallery p{
+        font-size: clamp(1.6em, 2.5vw, 3em);
+   }
+    #scroll_gallery .lastMobile_gallery img, #scroll_gallery .lastMobile_gallery p {
+        margin-bottom: -120px;
+   }
+    .hash_module {
+        bottom: 2%;
+   }
+    .hash_module p:first-child {
+        font-size: 1.1em;
+   }
+    #quotes_slide .swiper-slide p{
+        width: 100%;
+   }
+    .lbxp iframe{
+        width: calc(100vw - 40px) !important;
+        height: 30vh !important;
+   }
+    .sbi_lightbox{
+        height: auto;
+        margin-top: 0px;
+        align-items: flex-start;
+        width: 80%;
+        left: 10% !important;
+   }
+    .sbi_lightbox.sbi_lb-comments-enabled .sbi_lb-dataContainer{
+        height: auto;
+        padding: 25px 20px 30px;
+   }
+}
